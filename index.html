@@ -1,106 +1,132 @@
-<!DOCTYPE html><!-- DOCTYPE html means this document is an HTML5 document -->
-<html lang="en"><!-- The lang attribute helps search engines and browsers determine the language of the content -->
-  <head><!-- The head element contains meta-information about the document -->
-    <meta charset="UTF-8" /><!-- meta is generally used to specify character encoding, viewport settings, and other metadata -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><!-- The viewport meta tag controls the layout on mobile browsers -->
-    <link rel="stylesheet" href="style.css">
-    <!-- <link rel="stylesheet" href="style2.css" -->
-    <title>Document</title><!-- title sets the title of the document, which appears in the browser tab -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sweet FOSS Bakery</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body><!-- The body element contains the content of the document that is displayed in the browser -->
-    
-    <nav><!-- nav is a navigation element, used for grouping navigation links -->
-      <ul><!-- ul is an unordered list element -->
-        <li><!-- li is a list item element -->
-          <a href="#home">Home</a><!-- a is an anchor element, used to create hyperlinks and # is a used to link to an element with the corresponding id -->
-        </li>
-        <li>
-          <a href="#menu">Menu</a>
-        </li>
-        <li>
-          <a href="#contact">Contact</a>
-        </li>
-      </ul>
-    </nav>
-    <br>
-<div class="container"><!-- class is used to apply styles to elements, container is a common class name for layout purposes -->
-    <div class="home">
-      <header id="home"><!-- header is a section that typically contains introductory content or navigational links -->
-      
-      <div class="header-top">
-      <div class="img-container">
-        <img src="logo.png" alt="Bakery Logo"/><!-- img is an image element, used to embed images in the document -->
-      </div><!-- The src attribute specifies the path to the image, and alt provides a description for screen readers -->
-      <h1>Sweet FOSS  Bakery</h1><!-- h1 is a heading element, used for main titles -->
+
+  <body>
+    <header>
+      <nav aria-label="Main Navigation">
+        <div class="img-container">
+              <img src="logo.png" alt="Bakery Logo" />
+        </div>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+  </header>
+ 
+    <section class="container">
+      <div id="home" class="home">
+        <div class="cards">
+          <h1>Sweet FOSS Bakery</h1>
+          <div>
+        <p id="desc">
+              Where every bite tells a story, and every treat feels like a hug.  
+              From melt-in-your-mouth croissants to dreamy cupcakes topped with love,  
+              we craft our bakes with passion, purpose, and a pinch of magic.  
+              Whether you're craving comfort, celebration, or a moment of sweet escape...  
+              We're here to serve joy in layers.
+              <br>
+              
+        </p>
+        <button>Explore us!</button>
+        </div>
+        </div>
+
+        <img src="image.png" id="woman" alt="Bakery Illustration" />
+     
       </div>
-      <pre>
-      Where every bite tells a story, and every treat feels like a hug.  
-      From melt-in-your-mouth croissants to dreamy cupcakes topped with love,  
-      we craft our bakes with passion, purpose, and a pinch of magic.
-      Whether you're craving comfort, celebration, or a moment of sweet escape.... 
-      We're here to serve joy in layers.
-      </pre>
-    </header>
-    <img src="image.png" id="woman">
-      </div>
-
-    <section class="menu blurring" id="menu">
-  <h2>Today's Specials</h2>
-  
-  <div class="items">
-    <a href="flexing.html" class="item">🍰 Cake</a>
-    <a href="flexing.html" class="item">🧁 Cupcake</a>
-    <a href="flexing.html" class="item">🥐 Croissant</a>
-  </div>
-
-  <div class="items">
-    <a href="flexing.html" class="item">🍪 Cookie</a>
-    <a href="flexing.html" class="item">🍩 Donut</a>
-    <a href="flexing.html" class="item">🥧 Pie</a>
-  </div>
-
-  <div class="items">
-    <a href="flexing.html" class="item">🍫 Chocolate</a>
-    <a href="flexing.html" class="item">🍮 Pudding</a>
-    <a href="flexing.html" class="item">🍦 Ice Cream</a>
-  </div>
-</section>
-
-    <br>
-<div id="btn" class="blurring">
-    <button id="btn-surprise" onclick="surpriseMe()" >Click me to see a surprise</button><!-- button is of many types, used to trigger actions -->
-    <!-- onclick is an event attribute that executes JavaScript when the element is clicked -->
-      <div class="surprise">
-        <h4 id="surprise">Need a sweet treat?</h4>
-      </div>
-  
-</div>
-    <section id="contact" class="blurring">
-      <h2 style="padding: 6px; margin: 8px;">Contact Us</h2>
-      <!-- this type of styling where styles are applied directly to the element is called inline CSS -->
-
-      <p id="mail">fossbakery@gmail.com</p>
     </section>
-    <br>
+
+    <section id="menu" class="menu blurring">
+        <h2>Today's Specials</h2>
+        <div class="items-container">
+          <img src="./sweets.png" alt="sweet">
+            <div class="its">
+              <div class="items">
+                <a href="flexing.html" class="item">🍰 Cake</a>
+                <a href="flexing.html" class="item">🧁 Cupcake</a>
+                <a href="flexing.html" class="item">🥐 Croissant</a>
+              </div>
+
+              <div class="items">
+                <a href="flexing.html" class="item">🍪 Cookie</a>
+                <a href="flexing.html" class="item">🍩 Donut</a>
+                <a href="flexing.html" class="item">🥧 Pie</a>
+              </div>
+
+              <div class="items">
+                <a href="flexing.html" class="item">🍫 Chocolate</a>
+                <a href="flexing.html" class="item">🍮 Pudding</a>
+                <a href="flexing.html" class="item">🍦 Ice Cream</a>
+              </div>
+              <div class="items">
+                <a href="flexing.html" class="item">🍪 Cookie</a>
+                <a href="flexing.html" class="item">🍩 Donut</a>
+                <a href="flexing.html" class="item">🥧 Pie</a>
+              </div>
+          </div>
+        </div>
+    </section>
+
+      <section id="why-us" class="why-us blurring">
+        <h2>Why Choose Us?</h2>
+        <div class="why">
+          <div class="reasons">
+            <div class="reason-card">
+              <h3> Baked with Love</h3>
+              <p>Every treat is handcrafted with care and passion. We don’t just bake, we share warmth.</p>
+            </div>
+            <div class="reason-card">
+              <h3> Fresh Ingredients</h3>
+              <p>We use only the finest, locally sourced ingredients. No shortcuts, just goodness.</p>
+            </div>
+            <div class="reason-card">
+              <h3> Celebration Ready</h3>
+              <p>Be it birthdays, reunions, or rainy days our desserts are here to make memories sweeter.</p>
+            </div>
+            <div class="reason-card">
+              <h3> Celebration Ready</h3>
+              <p>Be it birthdays, reunions, or rainy days our desserts are here to make memories sweeter.</p>
+            </div>
+          </div>
+          <img src="" alt="">
+        </div>
+      </section>
+
+
+      <footer class="site-footer">
+  <div class="footer-content">
+    <div class="footer-brand">
+      <h3>Sweet FOSS Bakery</h3>
+      <p>Baking joy one layer at a time — made with love, magic, and a sprinkle of FOSS 💛</p>
     </div>
-    <footer><!-- footer is used for content at the bottom of the page, such as copyright information -->
-      <p>&copy; Made by: Anakha . S, FOSS CLUB Tech Lead</p><!-- &copy; is the HTML entity for the copyright symbol -->
-      <p>All rights reserved.</p>
-    </footer>
-    <style> 
-    /*this type of adding styles is called internal CSS, it is used to apply styles within a <style> tag in the document */
-      .surprise {
-        padding: 20px;
-  background: #341911; 
-  font-size: 15px;
-  border-radius: 18px;
-  color: #ffe5dd;
-  width: fit-content;
-  height: auto;
-  display: flex;
-  margin: auto; /* Centers it horizontally */
-}
-    </style>
-    <script src="script.js"></script><!-- script is used to link to JavaScript files or include inline scripts -->
+    
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#why-us">Why Choose Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <p>Email: <a href="mailto:fossbakery@gmail.com">fossbakery@gmail.com</a></p>
+      <p>Location: Dream Street, Cookie Town 🍪</p>
+    </div>
+  </div>
+  
+  <div class="footer-bottom">
+    <p>&copy; 2025 Sweet FOSS Bakery. All rights reserved.</p>
+
   </body>
 </html>
